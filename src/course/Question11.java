@@ -7,9 +7,17 @@ public class Question11 {
 
         Scanner sc = new Scanner(System.in);
 
-        int hora1 = sc.nextInt();
-        int hora2 = sc.nextInt();
+        int horaInicial = sc.nextInt();
+        int horaFinal = sc.nextInt();
+        int duracao;
 
-        
+        if (horaInicial < horaFinal) {
+            duracao = horaFinal - horaInicial;
+        }
+        else {
+            duracao = 24 - horaInicial + horaFinal;
+        }
+
+        System.out.println("O JOGO DUROU "+ duracao +" HORA(S)");
     }
 }
