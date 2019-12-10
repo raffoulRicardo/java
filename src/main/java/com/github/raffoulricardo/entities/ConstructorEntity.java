@@ -1,9 +1,9 @@
 package main.java.com.github.raffoulricardo.entities;
 
 public class ConstructorEntity {
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
     public ConstructorEntity() {
     }
@@ -17,6 +17,10 @@ public class ConstructorEntity {
     public ConstructorEntity(String name, double price) {
         this.name = name;
         this.price = price;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double totalValueInStock() {

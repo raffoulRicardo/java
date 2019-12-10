@@ -11,14 +11,14 @@ public class Constructor {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        ConstructorEntity p = new ConstructorEntity();
-
         System.out.println("Enter product data: ");
         System.out.print("Name: ");
         String name = sc.nextLine();
         System.out.print("Price: ");
         double price = sc.nextDouble();
         ConstructorEntity constructorEntity = new ConstructorEntity(name, price);
+
+        constructorEntity.setName("Computer");
 
         System.out.println();
         System.out.println("Product data: " + constructorEntity);
